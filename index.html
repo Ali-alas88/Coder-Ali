@@ -1,208 +1,547 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Coder-Ali, where innovation meets expertise in web development and software engineering. Explore my portfolio for elegant solutions and creative projects crafted with attention to detail and user experience. Let's collaborate and make an impact together."
+    />
+    <meta
+      property="og:description"
+      content="Explore Coder-Ali for elegant solutions and creative projects crafted with attention to detail and user experience."
+    />
+    <meta property="og:url" content=" https://coder-ali.vercel.app" />
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <title>Coder-Ali | Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to Coder-Ali, where innovation meets expertise in web development and software engineering. Explore my portfolio for elegant solutions and creative projects crafted with attention to detail and user experience. Let's collaborate and make an impact together.">
-  <meta property="og:description" content="Explore Coder-Ali for elegant solutions and creative projects crafted with attention to detail and user experience.">
-  <meta property="og:url" content=" https://coder-ali.vercel.app">
-  <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-  <title>Coder-Ali | Portfolio</title>
-</head>
-
-<body class="font-mont bg-darkColor text-lightColor capitalize">
-
-  <header class="w-full shadow-md p-[20px] h-[5rem] fixed top-0 left-0 z-40" id="header">
-    <nav class="flex items-center justify-between">
-      <h1 class="logo text-xl md:text-3xl font-bold tracking-wide">
-        Coder-<span class="text-PrimColor">Ali</span>
-      </h1>
-      <ul class="desktop-menu hidden md:flex md:space-x-4 text-xl">
-        <li>
-          <a class="hover:text-PrimColor transition-all duration-500 ease-in-out" href="index.html">Home</a>
-        </li>
-        <li>
-          <a class="hover:text-PrimColor transition-all duration-500 ease-in-out" href="#aboutMe">About</a>
-        </li>
-        <li>
-          <a class="hover:text-PrimColor transition-all duration-500 ease-in-out" href="#myProjects">My Projects</a>
-        </li>
-        <li>
-          <a class="hover:text-PrimColor transition-all duration-500 ease-in-out" href="#Contact">Contact</a>
-        </li>
-      </ul>
-      <div class="mobile-menu">
-        <!-- Mobile menu button (hidden on desktop) -->
-        <button id="dark-mode-toggle" class="text-3xl focus:outline-none">
-          🌙
-        </button>
-        <button id="mobile-menu-toggle" class="md:hidden text-3xl focus:outline-none">
-          ☰
-        </button>
-        <!-- Dark mode toggle button -->
-        <!-- Mobile menu -->
-        <ul id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-100 text-darkColor text-xl">
+  <body class="font-mont bg-darkColor text-lightColor capitalize">
+    <header
+      class="w-full shadow-md p-[20px] h-[4rem] md:h-[5rem] fixed top-0 left-0 z-40"
+      id="header"
+    >
+      <nav class="flex items-center justify-between">
+        <h1 class="logo text-xl md:text-3xl font-bold tracking-wide">
+          Coder-<span class="text-PrimColor">Ali</span>
+        </h1>
+        <ul class="desktop-menu hidden md:flex md:space-x-4 text-xl">
           <li>
-            <a class="block py-2 px-4 hover:text-PrimColor transition-all duration-500 ease-in-out"
-              href="index.html">Home</a>
+            <a
+              class="hover:text-PrimColor transition-all duration-500 ease-in-out"
+              href="index.html"
+              >Home</a
+            >
           </li>
           <li>
-            <a class="block py-2 px-4 hover:text-PrimColor transition-all duration-500 ease-in-out"
-              href="#aboutme">About</a>
+            <a
+              class="hover:text-PrimColor transition-all duration-500 ease-in-out"
+              href="#aboutMe"
+              >About</a
+            >
           </li>
           <li>
-            <a class="block py-2 px-4 hover:text-PrimColor transition-all duration-500 ease-in-out"
-              href="#myProjects">My Projects</a>
+            <a
+              class="hover:text-PrimColor transition-all duration-500 ease-in-out"
+              href="#myProjects"
+              >My Projects</a
+            >
           </li>
           <li>
-            <a class="block py-2 px-4 hover:text-PrimColor transition-all duration-500 ease-in-out"
-              href="#Contact">Contact</a>
+            <a
+              class="hover:text-PrimColor transition-all duration-500 ease-in-out"
+              href="#Contact"
+              >Contact</a
+            >
           </li>
         </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="mt-20 p-4">
-    <section class="Hero h-full container mx-auto p-8 ">
-      <div class="flex flex-col items-center justify-around xl:pt-8 xl:pb-24">
-        <div class="Image mb-8 xl:mb-0">
-          <img class="mix-blend-lighten w-[200px] h-[200px] object-contain bg-cover rounded-full"
-            src="/Hero1img.png" alt="" />
-          <div></div>
+        <div class="mobile-menu">
+          <!-- Mobile menu button (hidden on desktop) -->
+          <button id="dark-mode-toggle" class="text-3xl focus:outline-none">
+            🌙
+          </button>
+          <button
+            id="mobile-menu-toggle"
+            class="md:hidden text-3xl focus:outline-none"
+          >
+            ☰
+          </button>
+          <!-- Dark mode toggle button -->
+          <!-- Mobile menu -->
+          <ul
+            id="mobile-menu"
+            class="hidden absolute top-20 left-0 w-full bg-slate-100 text-darkColor text-xl"
+          >
+            <li>
+              <a
+                class="block py-2 px-4 hover:text-PrimColor transition-all duration-500 ease-in-out"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-2 px-4 hover:text-PrimColor transition-all duration-500 ease-in-out"
+                href="#aboutme"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-2 px-4 hover:text-PrimColor transition-all duration-500 ease-in-out"
+                href="#myProjects"
+                >My Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-2 px-4 hover:text-PrimColor transition-all duration-500 ease-in-out"
+                href="#Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
+      </nav>
+    </header>
 
-        <div class="text text-center">
-          <span class="flex items-center justify-center gap-2 text-slate-400 md:text-xl">Hello ! it's me
-            <img class="w-8 h-8" src="/wafe.svg" alt="" /></span>
-          <h1
-            class="text-4xl leading-none xl:text-[80px] bg-custom-gradient text-transparent bg-clip-text font-semibold">
-            Coder-Ali
-          </h1>
-          <p class="text-sm md:text-lg text-slate-400 mt-2 max-w-[31.25rem]">
-            <span class="text-secColor">web developer</span>
-            <span class="text-PrimColor">Originally from Somalia</span>. I
-            wake up in the morning, i grab a cup of Cappuccino coffee, open up
-            my laptop and I am passionate about creating innovative and
-            user-friendly web solutions that make a positive impact. Let's
-            build something amazing together!
-          </p>
+    <main class="mt-20 p-4">
+      <section class="Hero h-full container mx-auto p-8">
+        <div class="flex flex-col items-center justify-around xl:pt-8 xl:pb-24">
+          <div class="Image mb-8 xl:mb-0">
+            <img
+              class="mix-blend-lighten w-[200px] h-[200px] object-contain bg-cover rounded-full"
+              src="/Hero1img.png"
+              alt=""
+            />
+            <div></div>
+          </div>
+
+          <div class="text text-center">
+            <span
+              class="flex items-center justify-center gap-2 text-slate-400 md:text-xl"
+              >Hello ! it's me
+              <img
+                class="w-8 h-8 animate-shake duration-7000"
+                src="/wafe.svg"
+                alt=""
+            /></span>
+            <h1
+              class="text-4xl leading-none xl:text-[80px] bg-custom-gradient text-transparent bg-clip-text font-semibold"
+            >
+              Coder-Ali
+            </h1>
+            <p class="text-sm md:text-lg text-slate-400 mt-2 max-w-[31.25rem]">
+              <span class="text-secColor">web developer</span>
+              <span class="text-PrimColor">Originally from Somalia</span>. I
+              wake up in the morning, i grab a cup of Cappuccino coffee, open up
+              my laptop and I am passionate about creating innovative and
+              user-friendly web solutions that make a positive impact. Let's
+              build something amazing together!
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="aboutMe" class="About-Me mt-24 h-full container mx-auto p-8 ">
-      <div class="About flex flex-col md:flex-row gap-4 items-start justify-center">
-        <div class="About-Text">
-          <h1 class="text-lg md:text-4xl text-center md:text-left font-bold">
-            ABOUT ME
-          </h1>
-          <p class="text-sm md:text-lg text-slate-400 mt-4 max-w-[30rem]">
-            My name is Ali Alas. I live in Nairobi, Kenya. My life is challenging because I'm learning programming in
-            difficult circumstances. <br> Although I haven't attended any university, I'm dedicated to learning
-            programming, and one day I will succeed, God willing.
-          </p>
-          <p class="text-sm md:text-lg text-slate-400 mt-4 max-w-[30rem]">
-            While I may not consider myself an expert in front-end and back-end development.<br> The world of web
-            development has always fascinated me.
-          </p>
-          <p class="text-sm md:text-lg text-slate-400 mt-4 max-w-[30rem]">
-            I'm excited about the potential to grow and excel in both front-end and back-end technologies. <br>I am
-            eager to learn, work hard, and build a solid foundation in these fields as I progress on my journey.
-          </p>
-          <hr class="w-full border border-PrimColor mt-4" />
-          <div class="Skills mt-3">
-            <h1 class="text-2xl md:text-4xl font-bold">Skills</h1>
-            <div class="flex flex-wrap gap-x-12 ">
+      <section id="aboutMe" class="About-Me mt-24 h-full container mx-auto p-8">
+        <div
+          class="About flex flex-col md:flex-row gap-4 items-start justify-center"
+        >
+          <div class="About-Text">
+            <h1 class="text-lg md:text-4xl text-center md:text-left font-bold">
+              ABOUT ME
+            </h1>
+            <p class="text-sm md:text-lg text-slate-400 mt-4 max-w-[30rem]">
+              My name is Ali Alas. I live in Nairobi, Kenya. My life is
+              challenging because I'm learning programming in difficult
+              circumstances. <br />
+              Although I haven't attended any university, I'm dedicated to
+              learning programming, and one day I will succeed, God willing.
+            </p>
+            <p class="text-sm md:text-lg text-slate-400 mt-4 max-w-[30rem]">
+              While I may not consider myself an expert in front-end and
+              back-end development.<br />
+              The world of web development has always fascinated me.
+            </p>
+            <p class="text-sm md:text-lg text-slate-400 mt-4 max-w-[30rem]">
+              I'm excited about the potential to grow and excel in both
+              front-end and back-end technologies. <br />I am eager to learn,
+              work hard, and build a solid foundation in these fields as I
+              progress on my journey.
+            </p>
+            <hr class="w-full border border-PrimColor mt-4" />
+            <div class="Skills mt-3">
+              <h1 class="text-2xl md:text-4xl font-bold">Skills</h1>
+              <div class="flex flex-wrap gap-x-12">
+                <ul class="mt-2">
+                  <li class="">
+                    <i class="bx bxl-html5"></i>
+                    <strong class="text-secColor">HTML</strong>
+                  </li>
+                  <li class="">
+                    <i class="bx bxl-css3"></i>
+                    <strong class="text-secColor"> CSS</strong>
+                  </li>
+                  <li class="">
+                    <i class="bx bxl-javascript"></i>
+                    <strong class="text-secColor"> JavaScript</strong>
+                  </li>
+                </ul>
+                <ul class="mt-2">
+                  <li class="">
+                    <i class="bx bxl-tailwind-css"></i>
+                    <strong class="text-secColor"> Tailwind CSS</strong>
+                  </li>
+                  <li class="">
+                    <i class="bx bxl-wordpress"></i>
+                    <strong class="text-secColor">WordPress</strong>
+                  </li>
+                  <li class="">
+                    <i class="bx bxl-blogger"></i
+                    ><strong class="text-secColor"> blogger</strong>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="text-2xl md:text-4xl font-bold mt-3">Tools</h1>
+
               <ul class="mt-2">
                 <li class="">
-                  <i class="bx bxl-html5"></i>
-                  <strong class="text-secColor">HTML</strong>
+                  <i class="bx bxl-git"></i>
+                  <strong class="text-secColor"> Git</strong>
                 </li>
                 <li class="">
-                  <i class="bx bxl-css3"></i>
-                  <strong class="text-secColor"> CSS</strong>
+                  <i class="bx bxl-github"></i>
+                  <strong class="text-secColor"> GitHub</strong>
+                </li>
+                <li class=" ">
+                  <strong class="flex items-center gap-2 text-secColor"
+                    ><img class="w-3 h-3" src="/vscode.png" alt="" />
+                    vscode</strong
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="About-Image">
+            <img
+              class="hidden xl:flex md:w-[498px] md:h-[498px]"
+              src="/About.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="myProjects"
+        class="My Projects mt-24 h-full container mx-auto p-8"
+      >
+        <h1
+          class="text-center text-3xl md:text-4xl font-bold flex items-center justify-center gap-2"
+        >
+          My Projects <i class="bx bx-down-arrow-circle animate-bounce"></i>
+        </h1>
+        <div class="Projects mt-8 flex flex-col items-center justify-center">
+          <!-- ==================project One =============== -->
+
+          <div
+            class="Project flex flex-col xl:flex-row gap-10 items-center justify-center mt-11 mb-36 xl:mt-20"
+          >
+            <div class="Project-Text">
+              <h1
+                class="text-5xl xl:text-7xl mb-5 bg-custom-gradient text-transparent bg-clip-text font-semibold"
+              >
+                01
+              </h1>
+              <h1 class="text-2xl md:text-4xl font-semibold">
+                Cat Food Project
+              </h1>
+              <p class="text-sm md:text-lg text-slate-700 mt-4 max-w-[30rem]">
+                Discover a website dedicated to cat nutrition! Explore feline
+                care through my project, where I've honed skills to provide
+                essential info and recommendations for cat owners.
+              </p>
+              <h1 class="text-2xl md:text-4xl font-bold mt-3">technologies</h1>
+              <ul class="mt-2 flex gap-4 flex-wrap">
+                <li class="">
+                  <i class="bx bxl-html5"></i>
+                  <strong class="text-secColor"> Html 5</strong>
+                </li>
+                <li class="">
+                  <i class="bx bxl-tailwind-css"></i>
+                  <strong class="text-secColor"> Tailwind CSS</strong>
                 </li>
                 <li class="">
                   <i class="bx bxl-javascript"></i>
                   <strong class="text-secColor"> JavaScript</strong>
                 </li>
               </ul>
-              <ul class="mt-2">
+              <hr class="w-full border border-PrimColor mt-4" />
+              <div class="buttons mt-4 space-x-3">
+                <a
+                  href="https://github.com/Ali-alas88/Cat-Food-Project"
+                  target="_blank"
+                  class="btn bg-PrimColor p-2 rounded-md text-white font-semibold"
+                >
+                  <i class="bx bxl-github"> GitHub</i>
+                </a>
+                <a
+                  href="https://cat-food-project.vercel.app/"
+                  target="_blank"
+                  class="btn bg-PrimColor p-2 rounded-md text-white font-semibold"
+                >
+                  <i class="bx bx-link"></i> Demo
+                </a>
+              </div>
+            </div>
+
+            <div class="Project-Image max-w-[624px] mx-h-[350px] shadow-xl">
+              <img
+                class="rounded-md w-full h-auto hover:scale-105 transition-transform duration-300"
+                src="/catFood.png"
+                alt="Cat Food"
+              />
+            </div>
+          </div>
+
+          <!-- ======================project two================ -->
+
+          <div
+            class="Project flex flex-col xl:flex-row gap-10 items-start justify-center mt-8 mb-36 xl:mt-48"
+          >
+            <div class="Project-Text order-none xl:order-2">
+              <h1
+                class="text-5xl xl:text-7xl mb-5 bg-custom-gradient text-transparent bg-clip-text font-semibold"
+              >
+                02
+              </h1>
+              <h1 class="text-2xl md:text-4xl font-semibold">
+                Resturent Project
+              </h1>
+              <p class="text-sm md:text-lg text-slate-700 mt-4 max-w-[30rem]">
+                A restaurant website! Delve into a culinary journey through this
+                project, where I've crafted an immersive experience to showcase
+                delicious menus, ambiance, and reservations.
+              </p>
+              <h1 class="text-2xl md:text-4xl font-bold mt-3">technologies</h1>
+              <ul class="mt-2 flex gap-4 flex-wrap">
                 <li class="">
-                  <i class="bx bxl-tailwind-css"></i>
-                  <strong class="text-secColor"> Tailwind CSS</strong>
+                  <i class="bx bxl-html5"></i>
+                  <strong class="text-secColor"> Html 5</strong>
                 </li>
                 <li class="">
-                  <i class="bx bxl-wordpress"></i>
-                  <strong class="text-secColor">WordPress</strong>
-                </li>
-                <li class="">
-                  <i class="bx bxl-blogger"></i><strong class="text-secColor"> blogger</strong>
+                  <i class="bx bxl-css3"></i>
+                  <strong class="text-secColor"> Css 3</strong>
                 </li>
               </ul>
+              <hr class="w-full border border-PrimColor mt-4" />
+              <div class="buttons mt-4 space-x-3">
+                <a
+                  href="https://github.com/Ali-alas88/Resturent-website"
+                  target="_blank"
+                  class="btn bg-PrimColor p-2 rounded-md text-white font-semibold"
+                >
+                  <i class="bx bxl-github"> GitHub</i>
+                </a>
+                <a
+                  href="https://resturent-website-omega.vercel.app/"
+                  target="_blank"
+                  class="btn bg-PrimColor p-2 rounded-md text-white font-semibold"
+                >
+                  <i class="bx bx-link"></i> Demo
+                </a>
+              </div>
             </div>
-            <h1 class="text-2xl md:text-4xl font-bold mt-3">Tools</h1>
 
-            <ul class="mt-2">
-              <li class="">
-                <i class="bx bxl-git"></i>
-                <strong class="text-secColor"> Git</strong>
-              </li>
-              <li class="">
-                <i class="bx bxl-github"></i>
-                <strong class="text-secColor"> GitHub</strong>
-              </li>
-              <li class=" ">
-                <strong class="flex items-center gap-2 text-secColor"><img class="w-3 h-3" src="/vscode.png"
-                    alt="" />
-                  vscode</strong>
-              </li>
-            </ul>
+            <div
+              class="Project-Image max-w-[624px] mx-h-[350px] shadow-xl xl:order-1 order-none"
+            >
+              <img
+                class="rounded-md w-full h-auto hover:scale-105 transition-transform duration-300"
+                src="/Resturent.png"
+                alt="Cat Food"
+              />
+            </div>
           </div>
+
+          <!-- ======================project three================ -->
+
+          <div
+            class="Project flex flex-col xl:flex-row gap-10 items-start justify-center mt-8 mb-36 xl:mt-48"
+          >
+            <div class="Project-Text">
+              <h1
+                class="text-5xl xl:text-7xl mb-5 bg-custom-gradient text-transparent bg-clip-text font-semibold"
+              >
+                03
+              </h1>
+              <h1 class="text-2xl md:text-4xl font-semibold">
+                Portfolio Project
+              </h1>
+              <p class="text-sm md:text-lg text-slate-700 mt-4 max-w-[30rem]">
+                A portfolio showcasing my journey with HTML and CSS! Explore my
+                early works and witness the evolution of my skills in web
+                development
+              </p>
+              <h1 class="text-2xl md:text-4xl font-bold mt-3">technologies</h1>
+              <ul class="mt-2 flex gap-4 flex-wrap">
+                <li class="">
+                  <i class="bx bxl-html5"></i>
+                  <strong class="text-secColor"> Html 5</strong>
+                </li>
+                <li class="">
+                  <i class="bx bxl-css3"></i>
+                  <strong class="text-secColor"> Css 3</strong>
+                </li>
+              </ul>
+              <hr class="w-full border border-PrimColor mt-4" />
+              <div class="buttons mt-4 space-x-3">
+                <a
+                  href="https://github.com/Ali-alas88/portfolio"
+                  target="_blank"
+                  class="btn bg-PrimColor p-2 rounded-md text-white font-semibold"
+                >
+                  <i class="bx bxl-github"> GitHub</i>
+                </a>
+                <a
+                  href="https://portfolio-psi-gray-67.vercel.app/"
+                  target="_blank"
+                  class="btn bg-PrimColor p-2 rounded-md text-white font-semibold"
+                >
+                  <i class="bx bx-link"></i> Demo
+                </a>
+              </div>
+            </div>
+
+            <div class="Project-Image max-w-[624px] mx-h-[350px] shadow-xl">
+              <img
+                class="rounded-md w-full h-auto hover:scale-105 transition-transform duration-300"
+                src="/Portfolio.png"
+                alt="Cat Food"
+              />
+            </div>
+          </div>
+
+          <!-- ======================project four================ -->
+
+          <div
+            class="Project flex flex-col xl:flex-row gap-10 items-start justify-center mt-8 mb-11 xl:mt-48"
+          >
+            <div class="Project-Text order-none xl:order-2">
+              <h1
+                class="text-5xl xl:text-7xl mb-5 bg-custom-gradient text-transparent bg-clip-text font-semibold"
+              >
+                04
+              </h1>
+              <h1 class="text-2xl md:text-4xl font-semibold">
+                Full Name generetor
+              </h1>
+              <p class="text-sm md:text-lg text-slate-700 mt-4 max-w-[30rem]">
+                A full name generator crafted during my early JavaScript
+                journey! Experience my initial steps in coding as I ventured
+                into creating this useful tool.
+              </p>
+              <h1 class="text-2xl md:text-4xl font-bold mt-3">technologies</h1>
+              <ul class="mt-2 flex gap-4 flex-wrap">
+                <li class="">
+                  <i class="bx bxl-html5"></i>
+                  <strong class="text-secColor"> Html 5</strong>
+                </li>
+                <li class="">
+                  <i class="bx bxl-css3"></i>
+                  <strong class="text-secColor"> Css 3</strong>
+                </li>
+                <li class="">
+                  <i class="bx bxl-javascript"></i>
+                  <strong class="text-secColor"> JavaScript</strong>
+                </li>
+              </ul>
+              <hr class="w-full border border-PrimColor mt-4" />
+              <div class="buttons mt-4 space-x-3">
+                <a
+                  href="https://github.com/Ali-alas88/fullnamegenerator"
+                  target="_blank"
+                  class="btn bg-PrimColor p-2 rounded-md text-white font-semibold"
+                >
+                  <i class="bx bxl-github"></i> GitHub
+                </a>
+                <a
+                  href="https://name-generator-swart.vercel.app/"
+                  target="_blank"
+                  class="btn bg-PrimColor p-2 rounded-md text-white font-semibold"
+                >
+                  <i class="bx bx-link"></i> Demo
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="Project-Image max-w-[624px] mx-h-[350px] shadow-xl xl:order-1 order-none"
+            >
+              <img
+                class="rounded-md w-full h-auto hover:scale-105 transition-transform duration-300"
+                src="nameGenerator.png"
+                alt="nameGenerator"
+              />
+            </div>
+          </div>
+
+          <button
+            id="seeMore"
+            class="mt-4 pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] border border-PrimColor rounded-xl hover:bg-PrimColor hover:scale-105 transition-all duration-500 ease-out"
+          >
+            See More
+          </button>
         </div>
-        <div class="About-Image">
-          <img class="hidden xl:flex md:w-[498px] md:h-[498px]" src="/About.png" alt="" />
+      </section>
+
+      <section class="Contact mt-24 h-[50dvh] container mx-auto p-8">
+        <div
+          id="Contact"
+          class="Contact flex flex-col items-center justify-center"
+        >
+          <h1 class="text-lg md:text-4xl text-center md:text-left font-bold">
+            Get In Contact
+          </h1>
+          <p class="text-center mt-4 text-sm md:text-xl max-w-[30rem]">
+            Ready to start a project, have questions, or just want to say hi?
+            Drop me a line, and I'll get back to you in a flash. I'm here and
+            eager to connect 🞄
+          </p>
+          <button
+            class="mt-4 pt-[0.5rem] pb-[0.5rem] pl-[1rem] pr-[1rem] border border-PrimColor rounded-xl hover:bg-PrimColor hover:scale-105 transition-all duration-500 ease-out"
+          >
+            <a
+              class="contact__btn btn"
+              href="mailto:bloggerwebsite@gmail.com"
+              target="_blank"
+              >Contact me</a
+            >
+          </button>
         </div>
+      </section>
+    </main>
+
+    <footer
+      class="flex flex-col items-center justify-center gap-4 container mx-auto p-8"
+    >
+      <div class="greetings mb-4">
+        <p id="greetings" class="text-[1.125rem] max-w-[30rem]"></p>
       </div>
-    </section>
-
-    <section id="myProjects" class="My Projects mt-24 h-[50dvh] container mx-auto p-8 ">
-      <div class="Projects">
-        <h1 class="text-center text-2xl md:text-4xl">My Projects</h1>
-        <p class="text-center mt-20">Coming Soon.....</p>
+      <div class="copywrite">
+        <p id="copywrite"></p>
       </div>
-    </section>
+    </footer>
 
-    <section class=" mt-24 h-[50dvh] container mx-auto p-8 ">
-      <div id="Contact" class="Contact flex flex-col items-center justify-center">
-
-        <h1 class="text-lg md:text-4xl text-center md:text-left font-bold">Get In Contact</h1>
-        <p class="text-center mt-4 text-sm md:text-xl max-w-[30rem]">Ready to start a project, have questions, or just
-          want to say hi? Drop me a line, and I'll get back to you in a flash. I'm here and eager to connect 🞄 </p>
-        <button
-          class="mt-4 pt-[0.5rem] pb-[0.5rem]  pl-[1rem] pr-[1rem] border border-PrimColor rounded-xl hover:bg-PrimColor hover:scale-105 transition-all duration-500 ease-out"><a
-            class="contact__btn btn" href="mailto:bloggerwebsite@gmail.com" target="_blank">Contact me</a></button>
-      </div>
-    </section>
-
-  </main>
-  <footer class="flex flex-col items-center justify-center gap-4 container mx-auto p-8 ">
-    <div class="greetings mb-4">
-      <p id="greetings" class="text-[1.125rem] max-w-[30rem]">
-      </p>
-    </div>
-    <div class="copywrite">
-      <p id="copywrite"></p>
-    </div>
-  </footer>
-
-
-  <script type="module" src="/main.js"></script>
-</body>
-
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

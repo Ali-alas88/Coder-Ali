@@ -29,14 +29,20 @@ export default {
         'custom': '0 0 0.8rem #e11d48',
       },
       keyframes: {
-        'rotate-360': {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
+        shake: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '10%, 90%': { transform: 'translateX(-2px)' },
+          '20%, 80%': { transform: 'translateX(2px)' },
+          '30%, 50%, 70%': { transform: 'translateX(-2px)' },
+          '40%, 60%': { transform: 'translateX(2px)' },
         },
       },
       animation: {
-        'spin': 'rotate-360 3s linear infinite',
+        shake: 'shake 1.5s infinite ',      
       },
+    },
+    animationDelay: {
+      '7000': '7000ms',
     },
   },
   plugins: [],

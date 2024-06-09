@@ -42,6 +42,7 @@ mobileMenuToggle.addEventListener("click", function() {
     }
   }
 
+
   darkModeToggle.addEventListener('click', toggleDarkMode);
 
   window.addEventListener('load', function() {
@@ -60,7 +61,7 @@ mobileMenuToggle.addEventListener("click", function() {
   // header scroll
   window.addEventListener("scroll", function() {
       // console.log(window.scrollY)
-    if (window.scrollY > 50) {
+    if (window.scrollY > 70) {
       header.classList.add("bg-header-gradient");
     } else {
       header.classList.remove("bg-header-gradient");
@@ -69,6 +70,15 @@ mobileMenuToggle.addEventListener("click", function() {
 
   // ================================================================
 
+  // More Projects 
+  let seeMore = document.getElementById("seeMore");
+
+  seeMore.addEventListener("click", () => {
+    alert("Thank you for your interest! I'm currently working on more exciting projects. Please check back soon for updates.");
+  });
+
+
+  // ======================================================================
   // Footer greetings
 let greetings = document.getElementById("greetings");
 let message;
