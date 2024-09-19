@@ -1,8 +1,4 @@
-import './style.css'
-
-
-
-
+import './style.css';
 document.addEventListener("DOMContentLoaded", function () {
   let mobileMenuToggle = document.getElementById("mobile-menu-toggle");
   let mobileMenu = document.getElementById("mobile-menu");
