@@ -3,7 +3,7 @@ import './style.css'
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let mobileMenuToggle = document.getElementById("mobile-menu-toggle");
   let mobileMenu = document.getElementById("mobile-menu");
   let darkModeToggle = document.getElementById("dark-mode-toggle");
@@ -15,17 +15,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Mobile Menu 
 
-let isMenuOpen = false;
+  let isMenuOpen = false;
 
-mobileMenuToggle.addEventListener("click", function() {
-  isMenuOpen = !isMenuOpen; 
-  // console.log(isMenuOpen)
-  mobileMenuToggle.textContent = isMenuOpen ? '✕' : '☰';
-  mobileMenu.classList.toggle("hidden");
-});
+  mobileMenuToggle.addEventListener("click", function () {
+    isMenuOpen = !isMenuOpen;
+    // console.log(isMenuOpen)
+    mobileMenuToggle.textContent = isMenuOpen ? '✕' : '☰';
+    mobileMenu.classList.toggle("hidden");
+  });
 
 
-// ================================================================
+  // ================================================================
 
   // Function to toggle dark mode
 
@@ -45,7 +45,7 @@ mobileMenuToggle.addEventListener("click", function() {
 
   darkModeToggle.addEventListener('click', toggleDarkMode);
 
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     const savedMode = localStorage.getItem('mode');
     if (savedMode === 'dark') {
       body.classList.add('bg-darkColor', 'text-lightColor');
@@ -59,8 +59,8 @@ mobileMenuToggle.addEventListener("click", function() {
   // ================================================================
 
   // header scroll
-  window.addEventListener("scroll", function() {
-      // console.log(window.scrollY)
+  window.addEventListener("scroll", function () {
+    // console.log(window.scrollY)
     if (window.scrollY > 70) {
       header.classList.add("bg-header-gradient");
     } else {
@@ -80,38 +80,38 @@ mobileMenuToggle.addEventListener("click", function() {
 
   // ======================================================================
   // Footer greetings
-let greetings = document.getElementById("greetings");
-let message;
-const today = new Date();
-console.log(today.getFullYear());
-let currentyear =today.getFullYear();
-const options = { weekday: "long" };
-const day = today.toLocaleDateString("en-US", options);
+  let greetings = document.getElementById("greetings");
+  let message;
+  const today = new Date();
+  // console.log(today.getFullYear());
+  let currentyear = today.getFullYear();
+  const options = { weekday: "long" };
+  const day = today.toLocaleDateString("en-US", options);
 
-if (day === "Thursday" || day === "Friday") {
-  if (today.getHours() >= 18) {
-    message = "Enjoy the rest of your Weekend 😍";
+  if (day === "Thursday" || day === "Friday") {
+    if (today.getHours() >= 18) {
+      message = "Enjoy the rest of your Weekend 😍";
+    } else {
+      message = "Happy Weekend 😍";
+    }
   } else {
-    message = "Happy Weekend 😍";
+    if (today.getHours() >= 18) {
+      message = `Enjoy the rest of your ${day} 😍`;
+    } else {
+      message = `Have a great ${day} 😍`;
+    }
   }
-} else {
-  if (today.getHours() >= 18) {
-    message = `Enjoy the rest of your ${day} 😍`;
-  } else {
-    message = `Have a great ${day} 😍`;
-  }
-}
 
-greetings.innerText = message;
+  greetings.innerText = message;
 
-// ================================================================
+  // ================================================================
 
 
-// footer Copywrite
+  // footer Copywrite
 
-let copywrite = document.getElementById("copywrite");
+  let copywrite = document.getElementById("copywrite");
 
-copywrite.innerHTML = `© ${currentyear} <a class="text-PrimColor" href="">Coder-Ali</a>`;
+  copywrite.innerHTML = `© ${currentyear} <a class="text-PrimColor" href="https://wa.me/252617020686?text=Hey%20Coder-Ali">Coder-Ali</a>`;
 
 });
 
